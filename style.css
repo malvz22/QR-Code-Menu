@@ -1,0 +1,23 @@
+body{
+    background-image: url(image/background.jpg);
+    height: 1200px;
+}
+
+.nav{
+    background-color: #f3f3f3;
+}
+
+.modalImg{
+    width: 450px;
+}
+
+.cardImg{
+    width: 240px;
+    height: 160px;
+}
+
+.navButton{
+    width: 377px;
+    height: 40px;
+    margin: auto;
+}

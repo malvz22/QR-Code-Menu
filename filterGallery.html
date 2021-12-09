@@ -1,0 +1,459 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="stylesheet" href="style2.css">
+    <title>Simpang Raya Menu</title>
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg navbar-light nav p-0">
+        <div class="container">
+          <a class="navbar-brand mx-auto" href="#">
+            <img src="image/simpangraya.png" alt="Simpang Raya" style="width: 100px;">
+          </a>
+        </div>
+    </nav>
+
+    <div class="navButton mx-auto col-lg-12 mt-3">
+        <ul class="p-0">
+            <li class="list active" data-filter="makanan">Makanan</li>
+            <li class="list" data-filter="rames">Rames</li>
+            <li class="list" data-filter="sayuran">Sayuran</li>
+            <li class="list" data-filter="minuman">Minuman</li>
+        </ul>  
+    </div>
+
+    <section>
+        
+        <div class="container">
+            <!-- <div class="itemBox makanan"><img src="image/ayampop.png" alt=""></div>
+            <div class="itemBox rames"><img src="image/rames_ayamgulai.jpeg" alt=""></div>
+            <div class="itemBox makanan"><img src="image/ikankembungbakar.jpg" alt=""></div> -->
+
+            <!-- MAKANAN -->
+
+            <div class="row d-flex justify-content-evenly mt-3">
+                <div class="card border-0 shadow rounded-0 makanan col-lg-3 p-0" style="width: 240px; height: 320px;" data-bs-toggle="modal" data-bs-target="#ayamPop">
+                    <img src="image/Ayam Pop.jpg" class="card-img-top rounded-0 cardImg" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title">Ayam Pop</h5>
+                        <p class="card-text">Ayam kampung yang di rebus lalu digoreng disajikan dengan daun singkong dan sambal khas</p>
+                        <div class="modal fade" id="ayamPop" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                            <div class="modal-dialog">
+                                <div class="modal-content">
+                                    <div class="modal-header">
+                                        <h5 class="modal-title" id="exampleModalLabel">Ayam Pop</h5>
+                                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                                    </div>
+                                    <div class="modal-body m-auto">
+                                        <img class="modalImg" src="image/Ayam Pop.jpg" alt="ayam pop">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>            
+                </div>
+                <div class="card border-0 shadow rounded-0 makanan col-lg-3 p-0" style="width: 240px; height: 320px;" data-bs-toggle="modal" data-bs-target="#rendang">
+                    <img src="image/Rendang.jpg" class="card-img-top rounded-0 cardImg" alt="...">
+                    <div class="card-body">   
+                        <h5 class="card-title">Rendang</h5>    
+                        <p class="card-text">Daging sapi empuk yang diolah dengan bumbu rendang khas masakan padang</p>
+                        <div class="modal fade" id="rendang" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                            <div class="modal-dialog">
+                                <div class="modal-content">
+                                    <div class="modal-header">
+                                        <h5 class="modal-title" id="exampleModalLabel">Rendang</h5>
+                                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                                    </div>
+                                    <div class="modal-body m-auto">
+                                        <img class="modalImg" src="image/Rendang.jpg" alt="rendang">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>    
+                </div>
+                <div class="card border-0 shadow rounded-0 makanan col-lg-3 p-0" style="width: 240px; height: 320px;" data-bs-toggle="modal" data-bs-target="#gulaiAyam">
+                    <img src="image/Ayam Gulai.jpg" class="card-img-top rounded-0 cardImg" alt="...">
+                    <div class="card-body bg-white">
+                        <h5 class="card-title">Gulai Ayam</h5>
+                        <p class="card-text">Olahan ayam yang dimasak dengan bumbu kuning gulai</p>
+                        <div class="modal fade" id="gulaiAyam" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                            <div class="modal-dialog">
+                                <div class="modal-content">
+                                    <div class="modal-header">
+                                        <h5 class="modal-title" id="exampleModalLabel">Gulai Ayam</h5>
+                                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                                    </div>
+                                    <div class="modal-body m-auto">
+                                        <img class="modalImg" src="image/Ayam Gulai.jpg" alt="gulai ayam">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="card border-0 shadow rounded-0 makanan col-lg-3 p-0" style="width: 240px; height: 320px;" data-bs-toggle="modal" data-bs-target="#ikanAsinPade">
+                    <img src="image/ikanasampade.png" class="card-img-top rounded-0 cardImg" alt="...">
+                    <div class="card-body bg-white">
+                        <h5 class="card-title">Ikan Asin Pade</h5>
+                        <p class="card-text">Olahan ikan yang dimasak dengan kuah asam dan pedas khas masakan padan</p>
+                        <div class="modal fade" id="ikanAsinPade" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                            <div class="modal-dialog">
+                                <div class="modal-content">
+                                    <div class="modal-header">
+                                        <h5 class="modal-title" id="exampleModalLabel">Ikan Asin Pade</h5>
+                                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                                    </div>
+                                    <div class="modal-body m-auto">
+                                        <img class="modalImg" src="image/ikanasampade.png" alt="ikan asin pade">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row d-flex justify-content-evenly">
+                <div class="card border-0 shadow rounded-0 makanan col-lg-3 mt-lg-4 p-0" style="width: 240px; height: 320px;" data-bs-toggle="modal" data-bs-target="#ayamBakar">
+                    <img src="image/Ayam Bakar.jpg" class="card-img-top rounded-0 cardImg" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title">Ayam Bakar</h5>
+                        <p class="card-text">Masakan ayam yang dibakar dengan bumbu khusus Resto Simpang Raya</p>
+                        <div class="modal fade" id="ayamBakar" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                            <div class="modal-dialog">
+                                <div class="modal-content">
+                                    <div class="modal-header">
+                                        <h5 class="modal-title" id="exampleModalLabel">Ayam Bakar</h5>
+                                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                                    </div>
+                                    <div class="modal-body m-auto">
+                                        <img class="modalImg" src="image/Ayam Bakar.jpg" alt="ayam bakar">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="card border-0 shadow rounded-0 makanan col-lg-3 mt-lg-4 p-0" style="width: 240px; height: 320px;" data-bs-toggle="modal" data-bs-target="#ayamGoreng">
+                    <img src="image/Ayam Goreng.jpg" class="card-img-top rounded-0 cardImg" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title">Ayam Goreng</h5>
+                        <p class="card-text">Ayam yang digoreng renyah dan disajikan dengan bumbu halus yang digoreng</p>
+                        <div class="modal fade" id="ayamGoreng" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                            <div class="modal-dialog">
+                                <div class="modal-content">
+                                    <div class="modal-header">
+                                        <h5 class="modal-title" id="exampleModalLabel">Ayam Goreng</h5>
+                                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                                    </div>
+                                    <div class="modal-body m-auto">
+                                        <img class="modalImg" src="image/Ayam Goreng.jpg" alt="ayam goreng">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="card border-0 shadow rounded-0 makanan col-lg-3 mt-lg-4 p-0" style="width: 240px; height: 320px;" data-bs-toggle="modal" data-bs-target="#tongkolLado">
+                    <img src="image/tongkollado.jpg" class="card-img-top rounded-0 cardImg" alt="...">
+                    <div class="card-body bg-white">
+                        <h5 class="card-title">Tongkol Lado</h5>
+                        <p class="card-text">Ikan tongkol yang dimasak dengan sambal lado khas</p>
+                        <div class="modal fade" id="tongkolLado" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                            <div class="modal-dialog">
+                                <div class="modal-content">
+                                    <div class="modal-header">
+                                        <h5 class="modal-title" id="exampleModalLabel">Tongkol Lado</h5>
+                                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                                    </div>
+                                    <div class="modal-body m-auto">
+                                        <img class="modalImg" src="image/tongkollado.jpg" alt="Tongkol Lado">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="card border-0 shadow rounded-0 makanan col-lg-3 mt-lg-4 p-0" style="width: 240px; height: 320px;" data-bs-toggle="modal" data-bs-target="#ikanKembungBakar">
+                    <img src="image/ikankembungbakar.jpg" class="card-img-top rounded-0 cardImg" alt="...">
+                    <div class="card-body bg-white">
+                        <h5 class="card-title">Ikan Kembung Bakar</h5>
+                        <p class="card-text">Olahan Ikan Kembung yang dibakar dengan bumbu masakan padang</p>
+                        <div class="modal fade" id="ikanKembungBakar" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                            <div class="modal-dialog">
+                                <div class="modal-content">
+                                    <div class="modal-header">
+                                        <h5 class="modal-title" id="exampleModalLabel">Ikan Kembung Bakar</h5>
+                                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                                    </div>
+                                    <div class="modal-body m-auto">
+                                        <img class="modalImg" src="image/ikankembungbakar.jpg" alt="ikan kembung bakar">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row d-flex justify-content-evenly">
+                <div class="card border-0 shadow rounded-0 makanan col-lg-3 mt-lg-4 p-0" style="width: 240px; height: 320px;" data-bs-toggle="modal" data-bs-target="#satePadang">
+                    <img src="image/satepadang.png" class="card-img-top rounded-0 cardImg" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title">Sate Padang</h5>
+                        <p class="card-text">Sate yang berisi daging / lidah sapi lembut yang disajikan dengan sauce padang</p>
+                        <div class="modal fade" id="satePadang" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                            <div class="modal-dialog">
+                                <div class="modal-content">
+                                    <div class="modal-header">
+                                        <h5 class="modal-title" id="exampleModalLabel">Sate Padang</h5>
+                                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                                    </div>
+                                    <div class="modal-body m-auto">
+                                        <img class="modalImg" src="image/satepadang.png" alt="sate padang">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="card border-0 shadow rounded-0 makanan col-lg-3 mt-lg-4 p-0" style="width: 240px; height: 320px;" data-bs-toggle="modal" data-bs-target="#gulaiCumi">
+                    <img src="image/gulaicumi.png" class="card-img-top rounded-0 cardImg" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title">Gulai Cumi</h5>
+                        <p class="card-text">Olahan Cumi yang dimasak dengan bumbu gulai</p>
+                        <div class="modal fade" id="gulaiCumi" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                            <div class="modal-dialog">
+                                <div class="modal-content">
+                                    <div class="modal-header">
+                                        <h5 class="modal-title" id="exampleModalLabel">Gulai Cumi</h5>
+                                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                                    </div>
+                                    <div class="modal-body m-auto">
+                                        <img class="modalImg" src="image/gulaicumi.png" alt="gulai cumi">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="card border-0 shadow rounded-0 makanan col-lg-3 mt-lg-4 p-0" style="width: 240px; height: 320px;" data-bs-toggle="modal" data-bs-target="#udangLado">
+                    <img src="image/Udang Lado.jpg" class="card-img-top rounded-0 cardImg" alt="...">
+                    <div class="card-body bg-white">
+                        <h5 class="card-title">Udang Lado</h5>
+                        <p class="card-text">Olahan udang yang dimasak dengan sambal dan disajikan dengan petai</p>
+                        <div class="modal fade" id="udangLado" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                            <div class="modal-dialog">
+                                <div class="modal-content">
+                                    <div class="modal-header">
+                                        <h5 class="modal-title" id="exampleModalLabel">Udang Lado</h5>
+                                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                                    </div>
+                                    <div class="modal-body m-auto">
+                                        <img class="modalImg" src="image/Udang Lado.jpg" alt="udang lado">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="card border-0 shadow rounded-0 makanan col-lg-3 mt-lg-4 p-0" style="width: 240px; height: 320px;" data-bs-toggle="modal" data-bs-target="#gulaiTunjang">
+                    <img src="image/Tunjang Kikil.jpg" class="card-img-top rounded-0 cardImg" alt="...">
+                    <div class="card-body bg-white">
+                        <h5 class="card-title">Gulai Tunjang</h5>
+                        <p class="card-text">Olahan kaki sapi empuk yang dimasak dengan bumbu gulai</p>
+                    </div>
+                    <div class="modal fade" id="gulaiTunjang" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                        <div class="modal-dialog">
+                            <div class="modal-content">
+                                <div class="modal-header">
+                                    <h5 class="modal-title" id="exampleModalLabel">Gulai Tunjang</h5>
+                                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                                </div>
+                                <div class="modal-body m-auto">
+                                    <img class="modalImg" src="image/Tunjang Kikil.jpg" alt="gulai tunjang">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>    
+            <div class="row d-flex justify-content-evenly">
+                <div class="card border-0 shadow rounded-0 makanan col-lg-3 mt-lg-4 p-0" style="width: 240px; height: 320px;" data-bs-toggle="modal" data-bs-target="#dendengBatokok">
+                    <img src="image/Dendeng Batokok.jpg" class="card-img-top rounded-0 cardImg" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title">Dendeng Batokok</h5>
+                        <p class="card-text">Insert Description Here</p>
+                        <div class="modal fade" id="dendengBatokok" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                            <div class="modal-dialog">
+                                <div class="modal-content">
+                                    <div class="modal-header">
+                                        <h5 class="modal-title" id="exampleModalLabel">Dendeng Batokok</h5>
+                                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                                    </div>
+                                    <div class="modal-body m-auto">
+                                        <img class="modalImg" src="image/Dendeng Batokok.jpg" alt="dendeng batokok">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="card border-0 shadow rounded-0 makanan col-lg-3 mt-lg-4 p-0" style="width: 240px; height: 320px;" data-bs-toggle="modal" data-bs-target="#paru">
+                    <img src="image/Paru Resize.jpg" class="card-img-top rounded-0 cardImg" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title">Paru</h5>
+                        <p class="card-text">Insert Description Here</p>
+                        <div class="modal fade" id="paru" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                            <div class="modal-dialog">
+                                <div class="modal-content">
+                                    <div class="modal-header">
+                                        <h5 class="modal-title" id="exampleModalLabel">Paru</h5>
+                                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                                    </div>
+                                    <div class="modal-body m-auto">
+                                        <img class="modalImg" src="image/Paru Resize.jpg" alt="Paru">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="card border-0 shadow rounded-0 makanan col-lg-3 mt-lg-4 p-0" style="width: 240px; height: 320px;" data-bs-toggle="modal" data-bs-target="#dendengLambok">
+                    <img src="image/Dendeng Lambok.jpg" class="card-img-top rounded-0 cardImg" alt="...">
+                    <div class="card-body bg-white">
+                        <h5 class="card-title">Dendeng Lambok</h5>
+                        <p class="card-text">Deskripsi</p>
+                        <div class="modal fade" id="dendengLambok" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                            <div class="modal-dialog">
+                                <div class="modal-content">
+                                    <div class="modal-header">
+                                        <h5 class="modal-title" id="exampleModalLabel">Dendeng Lambok</h5>
+                                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                                    </div>
+                                    <div class="modal-body m-auto">
+                                        <img class="modalImg" src="image/Dendeng Lambok.jpg" alt="udang lado">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="card border-0 shadow rounded-0 makanan col-lg-3 mt-lg-4 p-0" style="width: 240px; height: 320px;" data-bs-toggle="modal" data-bs-target="#gulaiCincangKambing">
+                    <img src="image/Gulai Cincang Kambing.jpg" class="card-img-top rounded-0 cardImg" alt="...">
+                    <div class="card-body bg-white">
+                        <h5 class="card-title">Gulai Cincang Kambing</h5>
+                        <p class="card-text">Olahan daging cincang kambing yang dimasak dengan bumbu gulai</p>
+                        <div class="modal fade" id="gulaiCincangKambing" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                            <div class="modal-dialog">
+                                <div class="modal-content">
+                                    <div class="modal-header">
+                                        <h5 class="modal-title" id="exampleModalLabel">Gulai Cincang Kambing</h5>
+                                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                                    </div>
+                                    <div class="modal-body m-auto">
+                                        <img class="modalImg" src="image/Gulai Cincang Kambing.jpg" alt="gulai cincang kambing">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row d-flex justify-content-evenly">
+                <div class="card border-0 shadow rounded-0 makanan col-lg-3 mt-lg-4 p-0" style="width: 240px; height: 320px;" data-bs-toggle="modal" data-bs-target="#sotoPadang">
+                    <img src="image/Soto Padang.jpg" class="card-img-top rounded-0 cardImg" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title">Soto Padang</h5>
+                        <p class="card-text">Insert Description Here</p>
+                        <div class="modal fade" id="sotoPadang" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                            <div class="modal-dialog">
+                                <div class="modal-content">
+                                    <div class="modal-header">
+                                        <h5 class="modal-title" id="exampleModalLabel">Soto Padang</h5>
+                                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                                    </div>
+                                    <div class="modal-body m-auto">
+                                        <img class="modalImg" src="image/Soto Padang.jpg" alt="soto padang">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="card border-0 shadow rounded-0 makanan col-lg-3 mt-lg-4 p-0" style="width: 240px; height: 320px;" data-bs-toggle="modal" data-bs-target="#gulaiTambusu">
+                    <img src="image/Gulai Tambusu.jpg" class="card-img-top rounded-0 cardImg" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title">Gulai Tambusu</h5>
+                        <p class="card-text">Usus sapi yang diberi isian tahu dan telur, kemudian dimasak dengan kuah santan berbumbu.</p>
+                        <div class="modal fade" id="gulaiTambusu" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                            <div class="modal-dialog">
+                                <div class="modal-content">
+                                    <div class="modal-header">
+                                        <h5 class="modal-title" id="exampleModalLabel">Gulai Tambusu</h5>
+                                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                                    </div>
+                                    <div class="modal-body m-auto">
+                                        <img class="modalImg" src="image/Gulai Tambusu.jpg" alt="gulai tambusu">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="card border-0 shadow rounded-0 makanan col-lg-3 mt-lg-4 p-0" style="width: 240px; height: 320px;" data-bs-toggle="modal" data-bs-target="#gulaiNangka">
+                    <img src="image/Gulai Nangka.jpg" class="card-img-top rounded-0 cardImg" alt="...">
+                    <div class="card-body bg-white">
+                        <h5 class="card-title">Gulai Nangka</h5>
+                        <p class="card-text">Olahan nangka muda yang dimasak dengan bumbu gulai</p>
+                        <div class="modal fade" id="gulaiNangka" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                            <div class="modal-dialog">
+                                <div class="modal-content">
+                                    <div class="modal-header">
+                                        <h5 class="modal-title" id="exampleModalLabel">Gulai Nangka</h5>
+                                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                                    </div>
+                                    <div class="modal-body m-auto">
+                                        <img class="modalImg" src="image/Gulai Nangka.jpg" alt="gulai nangka">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="card border-0 shadow rounded-0 makanan col-lg-3 mt-lg-4 p-0" style="width: 240px; height: 320px;" data-bs-toggle="modal" data-bs-target="#ikanKepalaKakap">
+                    <img src="image/Ikan Kepala Kakap.jpg" class="card-img-top rounded-0 cardImg" alt="...">
+                    <div class="card-body bg-white">
+                        <h5 class="card-title">Gulai Kepala Ikan Kakap</h5>
+                        <p class="card-text">Olahan kepala ikan kakap yang dimasak dengan bumbu gulai</p>
+                        <div class="modal fade" id="ikanKepalaKakap" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                            <div class="modal-dialog">
+                                <div class="modal-content">
+                                    <div class="modal-header">
+                                        <h5 class="modal-title" id="exampleModalLabel">Ikan Kepala Kakap</h5>
+                                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                                    </div>
+                                    <div class="modal-body m-auto">
+                                        <img class="modalImg" src="image/Ikan Kepala Kakap.jpg" alt="gulai cincang kambing">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+                
+                
+
+            <!-- RAMES -->
+                
+            
+    </section>
+    <script src="https://code.jquery.com/jquery-3.6.0.js" integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk=" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+    <script src="script.js"></script>
+</body>
+</html>

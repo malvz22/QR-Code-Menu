@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+
 *{
     margin: 0;
     padding: 0;
@@ -23,6 +25,8 @@ ul{
 
 ul li{
     list-style: none;
+    font-family: Roboto;
+    font-size: 12px;
     background-color: rgb(192, 192, 192);
     padding: 4px 10px;
     margin: 5px;
@@ -65,13 +69,40 @@ ul li.active {
 }
 
 .cardImg{
-    width: 240px;
-    height: 140px;
+    width: 160px;
+    height: 90px;
+}
+
+.card-title{
+    font-family: Roboto;
+}
+
+.card-title h5{
+    margin-top: 10px;
+    font-size: 16px;
+}
+
+.card-title p{
+    color: white;
+    margin-top: 2px;
+    background-color: rgb(172, 0, 0);
+    padding: 1px 4px;
+    border-radius: 5px;
+    font-size: 13px;
+}
+
+.cbody{
+    height: 40px;
+    line-height: 40px;
+}
+
+.modal-title{
+    font-family: Roboto;
 }
 
 .cardSize{
-    width: 240px;
-    height: 320px;
+    width: 160px;
+    height: 145px;
 }
 
 .navButton{
